@@ -1,6 +1,6 @@
 {
     "name": "@nxg-org/mineflayer-auto-armor",
-    "version": "1.0.2",
+    "version": "1.0.0",
     "description": "Automatic armor sorting and equipping for mineflayer.",
     "keywords": [
         "mineflayer",

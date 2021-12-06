@@ -1,7 +1,8 @@
 
 import { Bot } from "mineflayer";
 import { Item } from "prismarine-item";
-import { AutoArmor } from "./src/AutoArmor";
+import { AutoArmor } from "./AutoArmor";
+import utilPlugin from "@nxg-org/mineflayer-util-plugin";
 
 declare module "mineflayer" {
     interface Bot {
@@ -15,6 +16,7 @@ declare module "mineflayer" {
 }
 
 export default function plugin(bot: Bot) {
+    if (!bot.hasPlugin(utilPlugin)) bot.loadPlugin(utilPlugin)
     const autoarmor = new AutoArmor(bot);
     bot.autoArmor = autoarmor;
 }
