@@ -1,0 +1,1 @@
+export type ArmorPieces = "head" | "torso" | "legs" | "feet";
